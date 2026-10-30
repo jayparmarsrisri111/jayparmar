@@ -1,9 +1,18 @@
 # 🚀 Jay Parmar — Developer Portfolio
 
 > **Full-Stack Web Developer & BCA Student**  
-> Gyanmanjari Innovative University • Bhavnagar, Gujarat, India.
+> Gyanmanjari Innovative University • Bhavnagar, Gujarat, India.  
+> 🌐 **Live Website**: [https://jayparmar-portfolio.vercel.app](https://jayparmar-portfolio.vercel.app)
 
 A clean, human-designed developer portfolio built with semantic HTML5, modern CSS3, and vanilla JavaScript. Crafted to be authentic, fast, and completely free of AI-template cliches.
+
+---
+
+## 🌐 Live Production Deployment
+
+- **Vercel Production URL**: [https://jayparmar-portfolio.vercel.app](https://jayparmar-portfolio.vercel.app)
+- **Status**: 🟢 Active & Live (100% Free with SSL HTTPS)
+
 
 ---
 
