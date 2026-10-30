@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-health" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="teal-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-health)" rx="16"/>
+  <!-- Decorative Grid -->
+  <g opacity="0.08" stroke="#14b8a6" stroke-width="1">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+  
+  <!-- Container Card Graphic -->
+  <rect x="70" y="55" width="660" height="340" rx="16" fill="#0b171c" stroke="#14b8a6" stroke-width="1.5" opacity="0.95"/>
+  <!-- Top bar of UI -->
+  <rect x="70" y="55" width="660" height="44" rx="16" fill="#11252d"/>
+  <circle cx="105" cy="77" r="6" fill="#ef4444"/>
+  <circle cx="125" cy="77" r="6" fill="#f59e0b"/>
+  <circle cx="145" cy="77" r="6" fill="#10b981"/>
+  <text x="400" y="82" fill="#99f6e4" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" text-anchor="middle" font-weight="600">Sri Sri HealthCare • AI Medical Platform</text>
+  
+  <!-- Healthcare cross icon -->
+  <rect x="110" y="125" width="56" height="56" rx="14" fill="#0f766e"/>
+  <path d="M132 138 h12 v10 h10 v12 h-10 v10 h-12 v-10 h-10 v-12 h10 z" fill="#2dd4bf"/>
+  
+  <text x="185" y="148" fill="#ffffff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="bold">AI Symptom Triage &amp; Vitals</text>
+  <text x="185" y="172" fill="#5eead4" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13">Multilingual (Gujarati / Hindi / English) • Gujarat PHC/CHC Directory</text>
+  
+  <!-- ECG wave -->
+  <path d="M 110 260 L 210 260 L 230 230 L 250 290 L 270 215 L 290 305 L 310 260 L 450 260 L 470 235 L 490 280 L 510 260 L 690 260" fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)"/>
+  
+  <!-- Badges -->
+  <rect x="100" y="325" width="145" height="34" rx="17" fill="#042f2e" stroke="#0d9488" stroke-width="1"/>
+  <text x="172" y="347" fill="#2dd4bf" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">Jan Aushadhi Finder</text>
+
+  <rect x="255" y="325" width="140" height="34" rx="17" fill="#042f2e" stroke="#0d9488" stroke-width="1"/>
+  <text x="325" y="347" fill="#2dd4bf" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">ASV Snakebite Guide</text>
+
+  <rect x="405" y="325" width="135" height="34" rx="17" fill="#450a0a" stroke="#dc2626" stroke-width="1"/>
+  <text x="472" y="347" fill="#f87171" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="bold">🚨 108 Emergency</text>
+
+  <rect x="550" y="325" width="140" height="34" rx="17" fill="#042f2e" stroke="#0d9488" stroke-width="1"/>
+  <text x="620" y="347" fill="#2dd4bf" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">Voice AI &amp; PWA</text>
+</svg>

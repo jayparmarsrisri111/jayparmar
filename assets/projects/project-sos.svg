@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-sos" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#450a0a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-sos)" rx="16"/>
+  <!-- Grid -->
+  <g opacity="0.08" stroke="#f87171" stroke-width="1">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+  
+  <rect x="70" y="55" width="660" height="340" rx="16" fill="#1b1216" stroke="#ef4444" stroke-width="1.5" opacity="0.95"/>
+  <rect x="70" y="55" width="660" height="44" rx="16" fill="#2a161f"/>
+  <circle cx="105" cy="77" r="6" fill="#ef4444"/>
+  <circle cx="125" cy="77" r="6" fill="#f59e0b"/>
+  <circle cx="145" cy="77" r="6" fill="#10b981"/>
+  <text x="400" y="82" fill="#fca5a5" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" text-anchor="middle" font-weight="600">Sri Sri SOS AI • Women Safety &amp; Digital Blackbox</text>
+  
+  <!-- Big SOS Button visual -->
+  <circle cx="210" cy="205" r="62" fill="#7f1d1d" stroke="#dc2626" stroke-width="3" filter="url(#glow-red)"/>
+  <circle cx="210" cy="205" r="50" fill="#dc2626"/>
+  <text x="210" y="213" fill="#ffffff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">SOS</text>
+  <text x="210" y="285" fill="#f87171" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">1-TOUCH EMERGENCY</text>
+
+  <!-- Right side features -->
+  <rect x="330" y="125" width="370" height="175" rx="12" fill="#221319" stroke="#b91c1c" stroke-width="1.2"/>
+  
+  <!-- GPS Radar indicator -->
+  <circle cx="370" cy="165" r="18" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+  <circle cx="370" cy="165" r="6" fill="#ef4444"/>
+  <text x="405" y="162" fill="#fca5a5" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="bold">Live GPS &amp; Evidence Capture</text>
+  <text x="405" y="180" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12">Automated camera / audio blackbox sync</text>
+  
+  <circle cx="370" cy="235" r="18" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+  <path d="M366 230 L374 235 L366 240 Z" fill="#ef4444"/>
+  <text x="405" y="232" fill="#fca5a5" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="bold">Police &amp; Guardian Dashboard</text>
+  <text x="405" y="250" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12">Real-time WebSockets synchronized</text>
+
+  <!-- Badges -->
+  <rect x="100" y="325" width="145" height="34" rx="17" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+  <text x="172" y="347" fill="#fecaca" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">AI Distress Detector</text>
+
+  <rect x="255" y="325" width="140" height="34" rx="17" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+  <text x="325" y="347" fill="#fecaca" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">Safe-Travel Timer</text>
+
+  <rect x="405" y="325" width="135" height="34" rx="17" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+  <text x="472" y="347" fill="#fecaca" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">Fake-Call Safe Exit</text>
+
+  <rect x="550" y="325" width="140" height="34" rx="17" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+  <text x="620" y="347" fill="#fecaca" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">Street Safety Audit</text>
+</svg>
