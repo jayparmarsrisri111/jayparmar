@@ -2114,7 +2114,7 @@ button, input, textarea {
 }
 
 /* ---------------------------------------------------------
-   18. Responsive Breakpoints
+   18. Responsive Breakpoints (Fully Fluid & Mobile-First)
    --------------------------------------------------------- */
 @media (max-width: 1024px) {
   .hero-container {
@@ -2124,11 +2124,13 @@ button, input, textarea {
 
   .about-layout {
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 
   .project-item {
     grid-template-columns: 1fr;
     gap: 24px;
+    padding: 28px;
   }
 
   .skills-layout-grid {
@@ -2149,6 +2151,11 @@ button, input, textarea {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .nav-links, .btn-resume-nav {
     display: none;
   }
@@ -2158,8 +2165,68 @@ button, input, textarea {
   }
 
   .section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  .hero-heading {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+  }
+
+  .hero-subheading {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.98rem;
+    margin-bottom: 22px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .hero-quick-connect {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .connect-divider {
+    display: none;
+  }
+
+  .profile-card {
+    max-width: 100%;
+  }
+
+  .project-item {
+    padding: 20px 16px;
+  }
+
+  .project-heading {
+    font-size: 1.2rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    min-height: 44px;
   }
 
   .experience-timeline::before {
@@ -2168,9 +2235,10 @@ button, input, textarea {
 
   .timeline-row {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
     padding-left: 28px;
     position: relative;
+    margin-bottom: 32px;
   }
 
   .timeline-left {
@@ -2189,32 +2257,83 @@ button, input, textarea {
     padding-left: 0;
   }
 
+  .exp-card {
+    padding: 20px 16px;
+  }
+
+  .exp-role {
+    font-size: 1.15rem;
+  }
+
+  .hackathon-box {
+    padding: 22px 18px;
+  }
+
+  .h-title {
+    font-size: 1.25rem;
+  }
+
+  .education-block {
+    padding: 22px 18px;
+  }
+
+  .edu-degree-title {
+    font-size: 1.18rem;
+  }
+
+  .form-wrapper {
+    padding: 22px 18px;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-btn-group {
+    flex-direction: column;
+  }
+
+  .form-btn-group .btn {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .resume-download-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .resume-download-card .btn {
+    width: 100%;
   }
 
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
   }
 
   .footer-bottom-flex {
     flex-direction: column;
     text-align: center;
-  }
-
-  .hero-buttons .btn {
-    width: 100%;
-  }
-
-  .form-btn-group .btn {
-    width: 100%;
+    gap: 8px;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
   .cert-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .skill-badges-container {
@@ -2224,5 +2343,60 @@ button, input, textarea {
   .mockup-metrics {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .browser-address {
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .profile-stats {
+    gap: 6px;
+  }
+
+  .p-stat-num {
+    font-size: 1.1rem;
+  }
+
+  .contact-entry {
+    padding: 14px 12px;
+    gap: 10px;
+  }
+
+  .entry-val {
+    font-size: 0.88rem;
+    word-break: break-all;
+  }
+
+  .lightbox-dialog {
+    max-width: 95vw;
+    margin: 8px;
+  }
+
+  .lightbox-body img {
+    max-height: 55vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-heading {
+    font-size: 1.85rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .profile-meta-row {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .meta-value {
+    text-align: left;
   }
 }
