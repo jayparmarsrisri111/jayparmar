@@ -627,13 +627,15 @@ button, input, textarea {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  column-gap: 12px;
+  row-gap: 8px;
   font-size: 0.88rem;
 }
 
 .connect-label {
   font-weight: 600;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .connect-link {
@@ -641,6 +643,8 @@ button, input, textarea {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
+  transition: color var(--transition);
 }
 
 .connect-link:hover {
